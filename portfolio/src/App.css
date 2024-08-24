@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* -----------NAV------------- */
+nav{
+  display: flex;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 1% 10.4%;
+  /* font-size: 1.6vw; */
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+ul li a{
+  padding: 1px 10px;
+
+}
+ ul {
+  padding: 0.6% 0%;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+ul :hover{
+   color: lightgrey;
+}
+
+
+
+/* ----------homeBody------------ */
+
+.topimg{
+  background-image: url('./assets/mac.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 30rem;
+  padding: 1% 10%;
+  opacity: 0.9;
+}
+.topimg-content{
+ text-transform: capitalize;
+  margin: 7rem 0;
+  font-size:45px ;
+  font-size-adjust: 0.4;
+  line-height: 1.4;
+  color: rgb(251, 252, 255);
+}
+/* about */
+.mainProfile{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 10%;
+}
+.mainprofilediv{
+  width: 35vw;
+  padding-right: 0%;
+}
+.mainProfile img{
+width: 30vw;
+height: 20em;
+}
+.mainProfile-content {
+  text-align: center;
+  text-align: start;
+}
+.mainProfile-content p{
+margin: 7% 0%;
+}
+.mainProfile-content h1{
+  margin-top: 5%;
+  text-transform: capitalize;
+  border-bottom: 2px gold solid;
+}
+/* .skill */
+
+.skillProfile{
+  text-transform: capitalize;
+  padding: 1% 10%;
+}
+.skillProfile h2{
+  text-align: center;
+}
+.skillcard{
+  text-align: center;
+
+  width: 23rem;
+height: 20em;
+border: 3px blue solid;
+}
+/* .skillcardred{
+ 
+} */
+
+
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #222;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 0% 10%;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 70px;
+  padding: 50px 0;
+  margin: 1%;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 20px;
+  /* margin: 20px; */
+  border-radius: 10px;
+  /* width: 100%; */
+}
+.skill h3{
+  margin: 5% 0;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  /* display: none; */
+  background-color: rgba(11, 157, 255, 0.952);
+  color: #222;
+  padding:  30px;
+  border-radius: 50%;
+  margin-top: -10%;
+  margin-left: 23%;
+  /* width: 20%; */
+  height: auto;
+  font-size: x-large;
+  
+}
+
+.contant{
+  text-align: center;
+  padding: 0 10%;
+  
+}
+.contant h2{
+  text-transform: capitalize;
+}
+.contant-grid{
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 60px 0%;
+  margin: 1%;
+}
+footer{
+padding: 0 10%;
+color: #fff;
+background-color: #000000;
+}
+.footer-div{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 0;
+}
+.icon-bar a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.icon-bar{
+  margin-left: auto;
+  
+}
+
+
+
+/* -------------Media Qurey------------ */
+/* mobole */
+
+@media screen and (max-width:600px){
+  /* Nav */
+ul li a {
+    text-transform: initial;
+    padding: 1px 5px;
+    font-size: small;
+}
+/* homeBody */
+.topimg{
+  height: 25rem;
+}
+.topimg-content{
+
+ line-height: 1.7;
+}
+.topimg-content .p2{
+  font-size: 5vw;
+  
+ }
+ .topimg-content .p3{
+   font-Size:6vw;
+ }
+  /* about */
+ 
+  .mainProfile img{
+    width: 80vw;
+    height: 350px;
+    /* width: fit-content; */
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .mainprofilediv{
+   text-align: center;
+   padding-right: 0%;
+   width: fit-content;
+  }
+  .mainProfile-content{
+    text-align: left;
+  }
+ /* skill  */
+ .skills-grid{
+  gap: 20px;
+  padding: 30px 0;
+ }
+ .skill{
+  padding: 10px;
+ }
+ .skill h3{
+  margin: 4% 0;
+}
+ /* contant  */
+.contant{
+  text-align: left;
+}
+.contant-grid{
+  gap: 10px;
+ padding: 20px 0;
+}
+
+ /* footer */
+ footer{
+  font-size: small;
+ }
+
+}
+
+@media screen and (min-width:600px) {
+
+  
+}
